@@ -17,4 +17,3 @@ dependencies:
     - git+https://github.com/iSnobal/katana.git@main
     - inicheck==0.9.1
     - utm==0.4.0
-
