@@ -18,7 +18,7 @@
 # Enable CPU Hyper-threading
 export OMP_NUM_THREADS=${SLURM_NTASKS}
 
-source load_conda_env isnoda
+source load_conda_env isnobal
 
 awsm_daily ~/project-data/iSnobal/ERW/ERW_subset_awsm.ini
 
