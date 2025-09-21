@@ -7,7 +7,7 @@ The following steps create a new environment to execute the iSnobal model.
 
 ### Set up a new conda environment
 ```
-  conda env create -f environment.yaml
+  conda env create -f isnobal.yaml
 ```
 
 ### Activate the environment
