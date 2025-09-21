@@ -1,6 +1,7 @@
 # iSnobal- Conda Install
 
-This folder contains conda environment files and install scripts.
+This folder contains conda environment files and a model development environment
+setup script.
 
 ## Model execution environment
 The following steps create a new environment to execute the iSnobal model.
@@ -15,9 +16,16 @@ The following steps create a new environment to execute the iSnobal model.
   conda activate isnobal
 ```
 
+### Quick test
+With a successful setup from above, you should be able to execute
+```bash
+awsm --help
+```
+and get the help message for AWSM and how to execute the command.
+
 All done!
 
-## Development environment
+## Model development environment
 Set up a conda environment with the steps shown above.
 
 ### Run the install script
