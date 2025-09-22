@@ -1,13 +1,14 @@
 # iSnobal- Conda Install
 
-This folder contains conda environment files and install scripts.
+This folder contains conda environment files and a model development environment
+setup script.
 
 ## Model execution environment
 The following steps create a new environment to execute the iSnobal model.
 
 ### Set up a new conda environment
 ```
-  conda env create -f environment.yaml
+  conda env create -f isnobal.yaml
 ```
 
 ### Activate the environment
@@ -15,20 +16,27 @@ The following steps create a new environment to execute the iSnobal model.
   conda activate isnobal
 ```
 
+### Quick test
+With a successful setup from above, you should be able to execute
+```bash
+awsm --help
+```
+and get the help message for AWSM and how to execute the command.
+
 All done!
 
-## Development environment
+## Model development environment
 Set up a conda environment with the steps shown above.
 
 ### Run the install script
 ```
-  ./install_isnoda_development.sh
+  ./install_isnobal_development.sh
 ```
 The script takes a user-defined install location as the first argument. The
 default location is: `$HOME/iSnobal` if none is provided.
 
 ### Releasing a new model version
-Updating the [conda environment.yaml](environment.yaml) to use a newer version
+Updating the [conda environment.yaml](isnobal.yaml) to use a newer version
 of AWSM requires [creating a new release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release) 
 on the [AWSM GitHub repository](https://github.com/iSnobal/awsm). AWSM
 only depends on SMRF and any updates to the latter should be completed first
