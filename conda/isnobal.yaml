@@ -9,8 +9,8 @@ dependencies:
 - cython
 - dateparser=0.7.2
 - gdal=3.11
-- libgdal-grib
-- libgdal-netcdf
+- libgdal-grib=3.11
+- libgdal-netcdf=3.11
 - make
 - netCDF4
 - numpy<1.23
