@@ -5,14 +5,24 @@
 #   copy_6th_hour.sh hrrr.t09z.wrfsfcf07.grib2 hrrr.t10z.wrfsfcf06.grib2
 #
 
+# User input
 SOURCE_FILE=$1
 CREATED_FILE=$2
+
+# Below should match the variables in the HRRR file, except for precipitation
+HRRR_VARIABLES="HGT|TMP|RH|UGRD|VGRD|TCDC|DSWRF|VBDSF|VDDSF|DLWRF"
 CREATED_HOUR=6
 
 # Grab non-precip fields
-wgrib2 -match "HGT|TMP|RH|UGRD|VGRD|TCDC|DSWRF" -set_date +1hr -set_ftime "${CREATED_HOUR} hour fcst" ${SOURCE_FILE} -grib ${CREATED_FILE}_1
+wgrib2 -match ${HRRR_VARIABLES} \
+  -set_date +1hr \
+  -set_ftime "${CREATED_HOUR} hour fcst" ${SOURCE_FILE} \
+  -grib ${CREATED_FILE}_1
 # Instant precip for hour
-wgrib2 -match "APCP:surface:${CREATED_HOUR}" -set_date +1hr -set_ftime "5-${CREATED_HOUR} hour acc fcst" ${SOURCE_FILE} -grib ${CREATED_FILE}_2
+wgrib2 -match "APCP:surface:${CREATED_HOUR}-7 hour acc fcst" \
+  -set_date +1hr \
+  -set_ftime "5-${CREATED_HOUR} hour acc fcst" ${SOURCE_FILE} \
+  -grib ${CREATED_FILE}_2
 
 # Concatenate
 cat ${CREATED_FILE}_{1,2} > ${CREATED_FILE}
