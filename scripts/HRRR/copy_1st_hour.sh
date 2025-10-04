@@ -5,19 +5,25 @@
 #   copy_1st_hour.sh hrrr.t09z.wrfsfcf02.grib2 hrrr.t10z.wrfsfcf01.grib2
 #
 
+set -e 
+
 SOURCE_FILE=$1
 CREATED_FILE=$2
 CREATED_HOUR=1
 
 # Adjust datetime stamp and forecast time
-wgrib2 -set_date +1hr -set_ftime "${CREATED_HOUR} hour fcst" ${SOURCE_FILE} -grib ${CREATED_FILE}
+wgrib2 ${SOURCE_FILE} \
+  -set_date +1hr \
+  -set_ftime "${CREATED_HOUR} hour fcst" \
+  -grib_out ${CREATED_FILE}
 
 # Print to verify output
 echo " ** Result **"
-wgrib2 -s ${CREATED_FILE}
+wgrib2 -v2 ${CREATED_FILE}
 
 # Clean up missing file
 find . -type f -name "${CREATED_FILE}.missing" -size 0 -delete
 
 # Remove SOURCE_FILE
 rm ${SOURCE_FILE}
+
