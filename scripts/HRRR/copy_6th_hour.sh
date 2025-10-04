@@ -5,6 +5,8 @@
 #   copy_6th_hour.sh hrrr.t09z.wrfsfcf07.grib2 hrrr.t10z.wrfsfcf06.grib2
 #
 
+set -e
+
 # User input
 SOURCE_FILE=$1
 CREATED_FILE=$2
@@ -14,15 +16,17 @@ HRRR_VARIABLES="HGT|TMP|RH|UGRD|VGRD|TCDC|DSWRF|VBDSF|VDDSF|DLWRF"
 CREATED_HOUR=6
 
 # Grab non-precip fields
-wgrib2 -match ${HRRR_VARIABLES} \
+wgrib2 ${SOURCE_FILE} \
+  -match ${HRRR_VARIABLES} \
   -set_date +1hr \
-  -set_ftime "${CREATED_HOUR} hour fcst" ${SOURCE_FILE} \
-  -grib ${CREATED_FILE}_1
+  -set_ftime "${CREATED_HOUR} hour fcst" \
+  -grib_out ${CREATED_FILE}_1
 # Instant precip for hour
-wgrib2 -match "APCP:surface:${CREATED_HOUR}-7 hour acc fcst" \
+wgrib2 ${SOURCE_FILE} \
+  -match "APCP:surface:${CREATED_HOUR}-7 hour acc fcst" \
   -set_date +1hr \
-  -set_ftime "5-${CREATED_HOUR} hour acc fcst" ${SOURCE_FILE} \
-  -grib ${CREATED_FILE}_2
+  -set_ftime "5-${CREATED_HOUR} hour acc fcst" \
+  -grib_out ${CREATED_FILE}_2
 
 # Concatenate
 cat ${CREATED_FILE}_{1,2} > ${CREATED_FILE}
@@ -32,10 +36,11 @@ rm ${CREATED_FILE}_{1,2}
 
 # Print to verify output
 echo " ** Result **"
-wgrib2 -s ${CREATED_FILE}
+wgrib2 -v2 ${CREATED_FILE}
 
 # Clean up missing file
 find . -type f -name "${CREATED_FILE}.missing" -size 0 -delete
 
 # Remove SOURCE_FILE
 rm ${SOURCE_FILE}
+
