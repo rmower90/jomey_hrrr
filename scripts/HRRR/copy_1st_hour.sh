@@ -5,14 +5,18 @@
 #   copy_1st_hour.sh hrrr.t09z.wrfsfcf02.grib2 hrrr.t10z.wrfsfcf01.grib2
 #
 
-set -e 
+set -e
 
 SOURCE_FILE=$1
 CREATED_FILE=$2
+
+# Below should match the variables in the HRRR file, except for precipitation
+HRRR_VARIABLES="HGT|TMP|RH|UGRD|VGRD|TCDC|DSWRF|VBDSF|VDDSF|DLWRF|APCP:surface:1-2 hour"
 CREATED_HOUR=1
 
 # Adjust datetime stamp and forecast time
 wgrib2 ${SOURCE_FILE} \
+  -match "${HRRR_VARIABLES}" \
   -set_date +1hr \
   -set_ftime "${CREATED_HOUR} hour fcst" \
   -grib_out ${CREATED_FILE}
