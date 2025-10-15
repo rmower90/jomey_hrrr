@@ -23,7 +23,7 @@ export HRRR_FC_HOURS=(1 6)
 export HRRR_DAY_HOURS=$(seq 0 23)
 
 # Western United States from Denver West
-export GRIB_AREA="-122.00:-105.00 32.00:49.00"
+export GRIB_AREA="-124.50:-104.00 31.00:49.00"
 # Job control - the defaults require to have 32 CPUs for the job
 ## Number of jobs to download in parallel
 PARALLEL_JOBS=16
