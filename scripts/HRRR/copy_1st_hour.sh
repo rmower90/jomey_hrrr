@@ -1,33 +1,23 @@
 #!/usr/bin/env bash
-# Script to copy previous 2nd hour and make it the 1st for the following
-#
-# Example:
-#   copy_1st_hour.sh hrrr.t09z.wrfsfcf02.grib2 hrrr.t10z.wrfsfcf01.grib2
-#
+# Copy previous f02 into a new f01 for the next cycle, preserving valid time.
+# Usage:
+#   copy_1st_hour.sh /abs/path/to/hrrr.t19z.wrfsfcf02.grib2 /abs/path/to/hrrr.t20z.wrfsfcf01.grib2
 
-set -e
+set -euo pipefail
 
-SOURCE_FILE=$1
-CREATED_FILE=$2
+SRC="${1:?SRC missing}"
+DEST="${2:?DEST missing}"
 
-# Below should match the variables in the HRRR file, except for precipitation
-HRRR_VARIABLES="HGT|TMP|RH|UGRD|VGRD|TCDC|DSWRF|VBDSF|VDDSF|DLWRF|APCP:surface:1-2 hour"
-CREATED_HOUR=1
+# Ensure absolute paths (helps logging)
+SRC="$(cd "$(dirname "$SRC")" && pwd)/$(basename "$SRC")"
+DEST_DIR="$(cd "$(dirname "$DEST")" && pwd)"
+DEST="${DEST_DIR}/$(basename "$DEST")"
 
-# Adjust datetime stamp and forecast time
-wgrib2 ${SOURCE_FILE} \
-  -match "${HRRR_VARIABLES}" \
-  -set_date +1hr \
-  -set_ftime "${CREATED_HOUR} hour fcst" \
-  -grib_out ${CREATED_FILE}
+if [[ ! -s "$SRC" ]]; then
+  echo "ERROR(copy_1): Source not found or empty: $SRC" >&2
+  exit 2
+fi
 
-# Print to verify output
-echo " ** Result **"
-wgrib2 -v2 ${CREATED_FILE}
-
-# Clean up missing file
-find . -type f -name "${CREATED_FILE}.missing" -size 0 -delete
-
-# Remove SOURCE_FILE
-rm ${SOURCE_FILE}
-
+# Require that SRC is an f02 file; DEST is an f01 file
+[[ "$SRC"  =~ wrfsfcf02\.grib2$ ]] || { echo "ERROR(copy_1): SRC is not f02: $SRC" >&2; exit 3; }
+[[ "$DEST" =~ wrfsfcf01\.grib2$ ]] || { echo "ERROR(copy_1): DEST is not f01: $DEST" >&2; exit_
