@@ -1,0 +1,28 @@
+# Ignore compiled output
+*.o
+*.o*
+*.class
+/bin/
+/target/
+
+# spatial files
+*.nc
+*.tif
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+temp/
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.swp
+
+# Ignore dependency caches
+/node_modules/
+/vendor/
+
+# Ignore sensitive information (e.g., API keys)
+*.env
+config.ini
