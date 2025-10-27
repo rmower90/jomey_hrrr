@@ -5,6 +5,9 @@
 /bin/
 /target/
 
+# python
+*.ipynb_checkpoints*
+
 # spatial files
 *.nc
 *.tif
