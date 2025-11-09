@@ -1,8 +1,8 @@
 #!/bin/bash -l
-#PBS -N monthly_hrrr_dwnload
+#PBS -N daily_hrrr_dwnload_20221229
 #PBS -A P48500028
 #PBS -l select=1:ncpus=1:mpiprocs=1:ompthreads=1:mem=20GB
-#PBS -l walltime=6:00:00
+#PBS -l walltime=1:00:00
 #PBS -q casper
 #PBS -j oe
 
@@ -17,13 +17,15 @@ conda activate jomey_hrrr
 
 
 echo "PROCESSING..."
-echo $year
-echo $month
-echo $directory
+year='2022'
+month='12'
+day='29'
+directory='/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2023/'
 
 
 ###module swap
-time ./download_hrrr_directory.sh $year $month $directory
+# echo "./download_hrr_directory.sh ${year}${month}
+time ./download_hrrr_directory.sh "${year}${month}${day}" $directory
 echo "FINISHED DOWNLOAD..."
 ### After download — verify & repair each daily directory
 echo "Verifying downloaded HRRR directories..."
@@ -34,16 +36,8 @@ if [[ ! -x "$VERIFY_SCRIPT" ]]; then
   echo "ERROR: verify script not found or not executable: $VERIFY_SCRIPT"
   exit 1
 fi
-
-# Loop through directories like: /path/to/.../hrrr.YYYYMMDD
-for day_dir in "${directory}/hrrr.${year}${month}"*; do
-  if [[ -d "$day_dir" ]]; then
-    echo "Running verification for: $day_dir"
-    "$VERIFY_SCRIPT" "$day_dir"
-  else
-    echo "No matching directory for pattern: ${directory}/hrrr.${year}${month}*"
-  fi
-done
-
+day_dir="${directory}/hrrr.${year}${month}${day}"
+echo "Running verification for: $day_dir"
+"$VERIFY_SCRIPT" "$day_dir"
 echo "All verification checks complete."
 

@@ -255,7 +255,8 @@ elif [[ "$1" =~ ^[0-9]{4}$ && "$2" =~ ^[0-9]{1,2}$ ]]; then
     exit 1
   fi
   YEAR="$1"
-  MONTH=$(printf "%02d" "$2")
+  # MONTH=$(printf "%02d" "$2")
+  MONTH="$2"
   OUT_DIR="$3"
   LAST_DAY=$(date -d "${MONTH}/01/${YEAR} + 1 month - 1 day" +%d)
   DATES=($(seq -f "${YEAR}${MONTH}%02g" 1 $LAST_DAY))
