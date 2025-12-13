@@ -93,13 +93,39 @@
     }
     
 
-    # Iterate expected cycles for the day directory based on files present (robust to partial hours)
-    mapfile -t HOURS < <(find "$DAY_DIR" -maxdepth 1 -type f -name 'hrrr.t??z.wrfsfcf*.grib2' \
-                         | sed -E 's@.*hrrr\.t([0-9]{2})z\..*@\1@' | sort -u)
-    # If none found, assume 00..23
-    if [[ ${#HOURS[@]} -eq 0 ]]; then
-      HOURS=( $(seq -w 0 23) )
+    # # Iterate expected cycles for the day directory based on files present (robust to partial hours)
+    # mapfile -t HOURS < <(find "$DAY_DIR" -maxdepth 1 -type f -name 'hrrr.t??z.wrfsfcf*.grib2' \
+    #                      | sed -E 's@.*hrrr\.t([0-9]{2})z\..*@\1@' | sort -u)
+    # # If none found, assume 00..23
+    # if [[ ${#HOURS[@]} -eq 0 ]]; then
+    #   HOURS=( $(seq -w 0 23) )
+    # fi
+
+    # -- NEW
+    # ----- Determine hours to verify: always 00..23, and report which are missing -----
+    EXPECTED=( $(seq -w 0 23) )
+
+    # What hours are present on disk?
+    mapfile -t FOUND < <(find "$DAY_DIR" -maxdepth 1 -type f -name 'hrrr.t??z.wrfsfcf*.grib2' \
+                     | sed -E 's@.*hrrr\.t([0-9]{2})z\..*@\1@' | sort -u)
+
+    # Build a quick lookup for FOUND
+    declare -A FOUND_SET=()
+    for h in "${FOUND[@]}"; do FOUND_SET["$h"]=1; done
+
+    # Report which hours are missing entirely (no files for that cycle)
+    MISSING=()
+    for h in "${EXPECTED[@]}"; do
+      if [[ -z "${FOUND_SET[$h]+x}" ]]; then MISSING+=("$h"); fi
+    done
+
+    HOURS=("${EXPECTED[@]}")  # Always check all 24 hours
+    echo "Hours considered: ${HOURS[*]}"
+    if (( ${#MISSING[@]} )); then
+      echo "Hours missing entirely on disk (no files found): ${MISSING[*]}"
     fi
+    # -- NEW
+
 
     YMD=$(basename "$DAY_DIR" | sed -E 's/^hrrr\.([0-9]{8}).*$/\1/')
     if ! [[ "$YMD" =~ ^[0-9]{8}$ ]]; then

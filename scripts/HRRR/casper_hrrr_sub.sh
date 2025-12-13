@@ -2,7 +2,7 @@
 #PBS -N monthly_hrrr_dwnload
 #PBS -A P48500028
 #PBS -l select=1:ncpus=1:mpiprocs=1:ompthreads=1:mem=20GB
-#PBS -l walltime=6:00:00
+#PBS -l walltime=8:00:00
 #PBS -q casper
 #PBS -j oe
 
@@ -25,25 +25,25 @@ echo $directory
 ###module swap
 time ./download_hrrr_directory.sh $year $month $directory
 echo "FINISHED DOWNLOAD..."
-### After download — verify & repair each daily directory
-echo "Verifying downloaded HRRR directories..."
-VERIFY_SCRIPT="./verify_and_repair_hrrr.sh"
+# ### After download — verify & repair each daily directory
+# echo "Verifying downloaded HRRR directories..."
+# VERIFY_SCRIPT="./verify_and_repair_hrrr.sh"
 
-# Safety check
-if [[ ! -x "$VERIFY_SCRIPT" ]]; then
-  echo "ERROR: verify script not found or not executable: $VERIFY_SCRIPT"
-  exit 1
-fi
+# # Safety check
+# if [[ ! -x "$VERIFY_SCRIPT" ]]; then
+#   echo "ERROR: verify script not found or not executable: $VERIFY_SCRIPT"
+#   exit 1
+# fi
 
-# Loop through directories like: /path/to/.../hrrr.YYYYMMDD
-for day_dir in "${directory}/hrrr.${year}${month}"*; do
-  if [[ -d "$day_dir" ]]; then
-    echo "Running verification for: $day_dir"
-    "$VERIFY_SCRIPT" "$day_dir"
-  else
-    echo "No matching directory for pattern: ${directory}/hrrr.${year}${month}*"
-  fi
-done
+# # Loop through directories like: /path/to/.../hrrr.YYYYMMDD
+# for day_dir in "${directory}/hrrr.${year}${month}"*; do
+#   if [[ -d "$day_dir" ]]; then
+#     echo "Running verification for: $day_dir"
+#     "$VERIFY_SCRIPT" "$day_dir"
+#   else
+#     echo "No matching directory for pattern: ${directory}/hrrr.${year}${month}*"
+#   fi
+# done
 
-echo "All verification checks complete."
+# echo "All verification checks complete."
 
