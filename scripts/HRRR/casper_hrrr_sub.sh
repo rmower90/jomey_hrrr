@@ -1,6 +1,6 @@
 #!/bin/bash -l
-#PBS -N monthly_hrrr_dwnload
-#PBS -A P48500028
+#PBS -N monthly_hrrr_dwnload_2019
+#PBS -A NWCA0002
 #PBS -l select=1:ncpus=1:mpiprocs=1:ompthreads=1:mem=20GB
 #PBS -l walltime=8:00:00
 #PBS -q casper
