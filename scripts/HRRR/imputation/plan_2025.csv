@@ -1,0 +1,337 @@
+date,hour,lead_group,initial_status,action,hop,donor_date,donor_hour,donor_lead,donor_path_or_note
+2024-10-27,0,F01,missing,copy,1,2024-10-26,23,2,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf02.grib2
+2024-10-27,0,F06,missing,copy,1,2024-10-26,23,7,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf07.grib2
+2024-10-27,1,F01,missing,copy,2,2024-10-26,23,3,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf03.grib2
+2024-10-27,1,F06,missing,copy,2,2024-10-26,23,8,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf08.grib2
+2024-10-27,2,F01,missing,copy,3,2024-10-26,23,4,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf04.grib2
+2024-10-27,2,F06,missing,copy,3,2024-10-26,23,9,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf09.grib2
+2024-10-27,3,F01,missing,copy,4,2024-10-26,23,5,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf05.grib2
+2024-10-27,3,F06,missing,copy,4,2024-10-26,23,10,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf10.grib2
+2024-10-27,4,F01,missing,copy,5,2024-10-26,23,6,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf06.grib2
+2024-10-27,4,F06,missing,copy,5,2024-10-26,23,11,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf11.grib2
+2024-10-27,5,F01,missing,copy,6,2024-10-26,23,7,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf07.grib2
+2024-10-27,5,F06,missing,copy,6,2024-10-26,23,12,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf12.grib2
+2024-10-27,6,F01,missing,copy,7,2024-10-26,23,8,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf08.grib2
+2024-10-27,6,F06,missing,copy,7,2024-10-26,23,13,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf13.grib2
+2024-10-27,7,F01,missing,copy,8,2024-10-26,23,9,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf09.grib2
+2024-10-27,7,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,8,F01,missing,copy,9,2024-10-26,23,10,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf10.grib2
+2024-10-27,8,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,9,F01,missing,copy,10,2024-10-26,23,11,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf11.grib2
+2024-10-27,9,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,10,F01,missing,copy,11,2024-10-26,23,12,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf12.grib2
+2024-10-27,10,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,11,F01,missing,copy,12,2024-10-26,23,13,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20241026/hrrr.t23z.wrfsfcf13.grib2
+2024-10-27,11,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,12,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,12,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,13,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,13,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,14,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,14,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,15,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,15,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,16,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,16,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,17,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,17,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,18,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,18,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,19,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,19,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,20,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,20,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,21,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,21,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,22,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,22,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,23,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-27,23,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,0,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,0,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,1,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,1,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,2,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,2,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,3,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,3,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,4,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,4,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,5,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,5,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,6,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,6,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,7,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,7,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,8,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,8,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,9,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,9,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,10,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,10,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,11,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,11,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,12,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,12,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,13,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,13,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,14,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,14,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,15,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,15,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,16,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,16,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,17,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,17,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,18,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,18,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,19,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,19,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,20,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,20,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,21,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,21,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,22,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,22,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,23,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-28,23,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,0,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,0,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,1,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,1,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,2,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,2,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,3,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,3,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,4,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,4,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,5,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,5,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,6,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,6,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,7,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,7,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,8,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,8,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,9,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,9,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,10,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,10,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,11,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,11,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,12,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,12,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,13,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,13,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,14,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,14,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,15,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,15,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,16,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,16,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,17,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,17,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,18,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,18,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,19,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,19,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,20,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,20,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,21,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,21,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,22,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,22,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,23,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-29,23,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,0,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,0,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,1,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,1,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,2,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,2,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,3,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,3,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,4,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,4,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,5,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,5,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,6,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,6,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,7,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,7,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,8,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,8,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,9,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,9,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,10,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,10,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,11,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,11,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,12,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,12,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,13,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,13,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,14,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,14,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,15,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,15,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,16,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,16,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,17,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,17,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,18,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,18,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,19,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,19,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,20,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,20,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,21,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,21,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,22,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,22,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,23,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-30,23,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,0,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,0,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,1,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,1,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,2,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,2,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,3,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,3,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,4,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,4,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,5,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,5,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,6,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,6,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,7,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,7,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,8,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,8,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,9,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,9,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,10,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,10,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,11,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,11,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,12,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,12,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,13,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,13,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,14,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,14,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,15,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,15,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,16,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,16,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,17,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,17,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,18,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,18,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,19,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,19,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,20,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,20,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,21,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,21,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,22,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,22,F06,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,23,F01,missing,interpolate,,,,,no donor within max_lead bound
+2024-10-31,23,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,0,F01,missing,copy,1,2025-05-29,23,2,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf02.grib2
+2025-05-30,0,F06,missing,copy,1,2025-05-29,23,7,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf07.grib2
+2025-05-30,1,F01,missing,copy,2,2025-05-29,23,3,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf03.grib2
+2025-05-30,1,F06,missing,copy,2,2025-05-29,23,8,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf08.grib2
+2025-05-30,2,F01,missing,copy,3,2025-05-29,23,4,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf04.grib2
+2025-05-30,2,F06,missing,copy,3,2025-05-29,23,9,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf09.grib2
+2025-05-30,3,F01,missing,copy,4,2025-05-29,23,5,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf05.grib2
+2025-05-30,3,F06,missing,copy,4,2025-05-29,23,10,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf10.grib2
+2025-05-30,4,F01,missing,copy,5,2025-05-29,23,6,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf06.grib2
+2025-05-30,4,F06,missing,copy,5,2025-05-29,23,11,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf11.grib2
+2025-05-30,5,F01,missing,copy,6,2025-05-29,23,7,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf07.grib2
+2025-05-30,5,F06,missing,copy,6,2025-05-29,23,12,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf12.grib2
+2025-05-30,6,F01,missing,copy,7,2025-05-29,23,8,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf08.grib2
+2025-05-30,6,F06,missing,copy,7,2025-05-29,23,13,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf13.grib2
+2025-05-30,7,F01,missing,copy,8,2025-05-29,23,9,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf09.grib2
+2025-05-30,7,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,8,F01,missing,copy,9,2025-05-29,23,10,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf10.grib2
+2025-05-30,8,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,9,F01,missing,copy,10,2025-05-29,23,11,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf11.grib2
+2025-05-30,9,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,10,F01,missing,copy,11,2025-05-29,23,12,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf12.grib2
+2025-05-30,10,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,11,F01,missing,copy,12,2025-05-29,23,13,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2025/hrrr.20250529/hrrr.t23z.wrfsfcf13.grib2
+2025-05-30,11,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,12,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,12,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,13,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,13,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,14,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,14,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,15,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,15,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,16,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,16,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,17,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,17,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,18,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,18,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,19,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,19,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,20,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,20,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,21,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,21,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,22,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,22,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,23,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-30,23,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,0,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,0,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,1,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,1,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,2,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,2,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,3,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,3,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,4,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,4,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,5,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,5,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,6,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,6,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,7,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,7,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,8,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,8,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,9,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,9,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,10,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,10,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,11,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,11,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,12,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,12,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,13,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,13,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,14,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,14,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,15,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,15,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,16,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,16,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,17,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,17,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,18,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,18,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,19,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,19,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,20,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,20,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,21,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,21,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,22,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,22,F06,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,23,F01,missing,interpolate,,,,,no donor within max_lead bound
+2025-05-31,23,F06,missing,interpolate,,,,,no donor within max_lead bound

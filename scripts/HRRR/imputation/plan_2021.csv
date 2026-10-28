@@ -1,0 +1,5 @@
+date,hour,lead_group,initial_status,action,hop,donor_date,donor_hour,donor_lead,donor_path_or_note
+2020-11-12,9,F01,missing,copy,1,2020-11-12,8,2,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2021/hrrr.20201112/hrrr.t08z.wrfsfcf02.grib2
+2020-11-12,9,F06,missing,copy,1,2020-11-12,8,7,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2021/hrrr.20201112/hrrr.t08z.wrfsfcf07.grib2
+2020-12-11,19,F06,missing,copy,1,2020-12-11,18,7,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2021/hrrr.20201211/hrrr.t18z.wrfsfcf07.grib2
+2021-02-09,7,F01,corrupt,copy,1,2021-02-09,6,2,/glade/derecho/scratch/rossamower/snow/data/met/hrrr/raw/2021/hrrr.20210209/hrrr.t06z.wrfsfcf02.grib2
